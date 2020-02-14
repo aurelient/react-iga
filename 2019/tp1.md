@@ -18,7 +18,7 @@ Ce TP fera l'objet d'un premier rendu __individuel__ et d'une note. Voir les cri
 
 Vous ferez le rendu sur github. Créez un projet git dès maintenant, puis un projet (npm init).
 
-Pensez à remplir le <a href="https://airtable.com/">formulaire de rendu</a>.
+Pensez à remplir le <a href="https://airtable.com/shrjtxHBCc9ZFQJu1">formulaire de rendu</a>.
 
 ### Mise en place du serveur
 
@@ -296,7 +296,7 @@ N'oubliez pas de désactiver l'option `watch` de webpack si vous lancez Webpack 
 
 Les critères d'évaluation sont les suivants:
 
-- Le rendu est à faire sur le <a href="https://airtable.com/">formulaire</a> suivant.
+- Le rendu est à faire sur le <a href="https://airtable.com/shrjtxHBCc9ZFQJu1">formulaire</a> suivant.
 - Le projet ne contient que des éléments nécessaire (.gitignore est bien défini)
 - Les dépendances de *développement* et de *déploiement* dans package.json sont bien définies
 - `npm run build` construit le projet
