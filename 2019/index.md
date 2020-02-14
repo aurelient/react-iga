@@ -1,34 +1,47 @@
 ## Technologies Web synchrones et multi-dispositifs
 
+Aurélien Tabard
 
-#### Encadrants
-- Aurélien Tabard 
-## Plan du cours
+### Plan du cours
 
 |          | Cours                      | Supports     |
 | -------- | -------------------------- | ------------ |
-| CM 0     | Présentation de l'UE       | [pdf](cours/cm0-intro.pdf)             |
+| CM 1     | Présentation de l'UE       |              |
 | CM 1     | Informatique Ubiquitaire   | [pdf](cours/cm1-introUbicomp.pdf)      |
-| CM 1 bis | Stack                      | [pdf](cours/cm1-stack.pdf)             |
+| CM 1     | Stack                      |                                        |
 | CM 2     | Programmation Réactive     | [pdf](cours/cm2-reactivity.pdf)        |
 | CM 3     | Design adaptatif & Gestes  | [pdf](cours/cm3-adaptation-gestes.pdf) |
 
 
 
-## TP
+### TP
 
-| Sujet                | Thème  |
-| -------------------- | ------ |
-| [TP 1](tp.html)      | Mise en place d'une Stack JavaScript  |
-| [TP 2](tp.html)      | Introduction à React                  |
-| [TP 3](tp.html)      | Redux + websockets / multi-dispositif |
-| [TP 4](tp.html/#3-distribution-dinterface-multi-dispositif) | Distribution d'interface multi-dispositif |
-| [TP 5](tp.html/#4-suite) | Modalité d'entrée (gestes, stylet)  |
+| Sujet            | Thème  |
+| -----------------| ------ |
+| [TP 1](tp1.html) | Mise en place d'une Stack JavaScript      |
+| [TP 2](tp2.html) | Introduction à React                      |
+| [TP 3](tp3.html) | Redux + websockets / multi-dispositif     |
+| [TP 4](tp4.html) | Distribution d'interface multi-dispositif |
+| [TP 5](tp5.html) | Modalité d'entrée (gestes, stylet)        |
 
 
 
-# Références
+### Références
 
 - [Ressources du cours (contribuez)](hack)
 - [Javascript Cheat Sheet](https://mbeaudru.github.io/modern-js-cheatsheet/)
 - [Mozilla Developer Network (Documentation)](https://developer.mozilla.org/)
+
+
+#### Livres
+- [Javascript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+- [Eloquent Javascript (FR) 1e edition](https://fr.eloquentjavascript.net/)
+- [Eloquent Javascript (EN) 3e edition](http://eloquentjavascript.net/3rd_edition/)
+
+#### Principes
+- [The Reactive Manifesto (September 2014)](https://www.reactivemanifesto.org/)
+
+#### Dev
+- [Glitch un environnement de dévelopement et déploiement JS](https://glitch.com)
+- [Ngrok tunneling (pour tester des choses locales via le réseau)](https://ngrok.com/)
+- [https://zeit.co/now](https://zeit.co/now)
