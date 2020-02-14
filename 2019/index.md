@@ -6,9 +6,9 @@ Aurélien Tabard
 
 |          | Cours                      | Supports     |
 | -------- | -------------------------- | ------------ |
-| CM 1     | Présentation de l'UE       |              |
-| CM 1     | Informatique Ubiquitaire   | [pdf](cours/cm1-introUbicomp.pdf)      |
-| CM 1     | Stack                      |                                        |
+| CM 1     | Présentation de l'UE       |      –       |
+| CM 1     | Informatique Ubiquitaire   |      –       |
+| CM 1     | Stack                      | [pdf](cours/cm1-introUbicomp.pdf)      |
 | CM 2     | Programmation Réactive     | [pdf](cours/cm2-reactivity.pdf)        |
 | CM 3     | Design adaptatif & Gestes  | [pdf](cours/cm3-adaptation-gestes.pdf) |
 
@@ -18,7 +18,7 @@ Aurélien Tabard
 
 | Sujet            | Thème  |
 | -----------------| ------ |
-| [TP 1](tp1.html) | Mise en place d'une Stack JavaScript      |
+| [TP 1](tp1.html) | Mise en place d'une Stack Node+React      |
 | [TP 2](tp2.html) | Introduction à React                      |
 | [TP 3](tp3.html) | Redux + websockets / multi-dispositif     |
 | [TP 4](tp4.html) | Distribution d'interface multi-dispositif |
@@ -31,7 +31,7 @@ Aurélien Tabard
 - [Ressources du cours (contribuez)](hack)
 - [Javascript Cheat Sheet](https://mbeaudru.github.io/modern-js-cheatsheet/)
 - [Mozilla Developer Network (Documentation)](https://developer.mozilla.org/)
-
+- [Conseils pour débugger avec Chrome](https://www.freecodecamp.org/news/awesome-chrome-dev-tools-tips-and-tricks/)
 
 #### Livres
 - [Javascript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
