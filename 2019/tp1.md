@@ -9,8 +9,8 @@ L'objectif du TP est de mettre en place une Single Page Application (SPA), déve
 - L'automatisation et le bundling avec Webpack
 - Comment configurer Babel pour la rétrocompatibilité du code
 - Créer un projet React
-- Créer deux composants React basiques
 - Générer un bundle
+- Configurer ESlint et vérifier son projet
 - Assembler et servir le contenu
 
 
@@ -96,31 +96,13 @@ Installer les dépendances (de développement) suivantes:
 - `babel-loader` (pour l'intégration avec Webpack)
 
 Configurer Babel à l'aide d'un fichier `.babelrc` à la racine de votre projet,
-en indiquant les pré-configurations utilisées pour le reste du projet.
+en indiquant les pré-configurations utilisées pour le reste du projet. 
+Il doit contenir les lignes suivantes:
 
 ```json
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
-```
-
-Il faut spécifier à Webpack la transpilation Babel des fichiers .js et .jsx du projet lors du build.
-Cela se fait le fichier `webpack.config.js` :
-
-```javascript
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      }
-    ]
-  }
-};
 ```
 
 
@@ -165,14 +147,19 @@ ReactDOM.render(<Index />, document.getElementById('root'));
 ```
 
 
-### Générer un bundle
+### Générer un bundle avec webpack
 
-Il faut maintenant transpiler ce code pour qu'il soit compréhensible par un
-navigateur. Le résultat ira dans le dossier `dist``
+Il faut maintenant transpiler ce code pour qu'il soit compréhensible par un navigateur. 
+Le résultat ira dans le dossier `dist``
+
+
 
 On installe le module [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) pour faciliter la création de fichier HTML avec Webpack.
 
 On point vers le point d'entée React (le fichier index.js) et ou l'appliquer (`template: "./src/index.html"`).
+
+
+Créer un fichier `webpack.config.js` avec le contenu suivant:
 
 ```javascript
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -198,12 +185,32 @@ module.exports = {
 };
 ```
 
+Il faut spécifier à Webpack la transpilation Babel des fichiers .js et .jsx du projet lors du build. 
+Ajouter la règle suivante dans le fichier de configuration webpack: 
+
+```javascript
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
+};
+```
+
 ### Assembler et servir le contenu
 
 Il faut maintenant dire à Express ou aller chercher le contenu.
 Pour cela il faut lui dire que sa route '/' est maintenant `dist/index.html`
 
-Rajouter les constantes suivantes (selon vos noms de fichiers et de dossier):
+Rajouter les constantes suivantes (selon vos noms de fichiers et de dossier) dans l'index.js de votre serveur:
+
 ```js
 const path = require('path');
 
@@ -277,22 +284,6 @@ ReactDOM.render(<Index />, document.getElementById('root'));
 -->
 
 
-### React Developer Tools
-
-Installez l'extension [React Developer Tools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) dans votre navigateur préféré.
-
-Inspectez l'application.
-
-
-### Déployer sur Heroku
-Afin de rendre notre application disponible sur les internets, nous allons la déployer sur [Heroku](https://heroku.com).
-
-Suivre le guide de Heroku pour déployer une application via git :
-[https://devcenter.heroku.com/articles/git#creating-a-heroku-remote](https://devcenter.heroku.com/articles/git#creating-a-heroku-remote)
-
-N'oubliez pas de désactiver l'option `watch` de webpack si vous lancez Webpack en `--mode production` [voir ici](https://webpack.js.org/configuration/mode/).
-
-
 ### ESLint
 
 Le *linting* consiste à vérifier que votre code respecte de bonnes pratiques. 
@@ -316,12 +307,28 @@ Lancer `eslint "src/**/*.js"` pour vérifier le code existant
 
 `eslint "src/**/*.js" --fix` permet de corriger certaines problèmes automatiquement
 
+
+### Déployer sur Heroku
+Afin de rendre notre application disponible sur les internets, nous allons la déployer sur [Heroku](https://heroku.com).
+
+Suivre le guide de Heroku pour déployer une application via git :
+[https://devcenter.heroku.com/articles/git#creating-a-heroku-remote](https://devcenter.heroku.com/articles/git#creating-a-heroku-remote)
+
+N'oubliez pas de désactiver l'option `watch` de webpack si vous lancez Webpack en `--mode production` [voir ici](https://webpack.js.org/configuration/mode/).
+
+
+### React Developer Tools
+
+Installez l'extension [React Developer Tools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) dans votre navigateur préféré.
+
+Inspectez l'application.
+
+
 ### Fin
 
-Les critères d'évaluation sont les suivants:
 
 - Le rendu est à faire sur le <a href="https://airtable.com/shrjtxHBCc9ZFQJu1">formulaire</a> suivant.
 - Le projet ne contient que des éléments nécessaire (.gitignore est bien défini)
-- Les dépendances de *développement* et de *déploiement* dans package.json sont bien définies
+- Les dépendances sont bien définies dans package.json 
 - `npm run build` construit le projet
 - `npm run start` lance le serveur et permet de tester le projet.
