@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 let ANGLE = null;
 let HALF = null; 
 let PHI = 0.5 * (-1.0 + Math.sqrt(5.0));
