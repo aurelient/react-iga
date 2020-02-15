@@ -253,7 +253,7 @@ import LOGO from '<path-to-file>/logo.png';
 
 Nous allons utiliser [react-bootstrap](https://react-bootstrap.github.io/) comme framework CSS. Installez le (`npm install ...`)
 
-
+<!-- 
 ### Des composants Reacts
 
 Créer deux composants basiques sans aucune logique. Le premier affichera un titre. Le deuxième affichera des images prises dans un dossier statique.
@@ -273,7 +273,8 @@ const Index = () => {
   );
 };
 ReactDOM.render(<Index />, document.getElementById('root'));
-```
+``` 
+-->
 
 
 ### React Developer Tools
