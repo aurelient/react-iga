@@ -292,6 +292,29 @@ Suivre le guide de Heroku pour déployer une application via git :
 N'oubliez pas de désactiver l'option `watch` de webpack si vous lancez Webpack en `--mode production` [voir ici](https://webpack.js.org/configuration/mode/).
 
 
+### ESLint
+
+Le *linting* consiste à vérifier que votre code respecte de bonnes pratiques. 
+
+Installer `eslinst` : `npm install eslint --save-dev``
+
+Puis configurer eslint via `eslint --init``
+
+Voici le type de réponses à fournir pour un projet React :
+
+- How would you like to use ESLint? **To check syntax, find problems, and enforce code style**
+- What type of modules does your project use? **JavaScript modules (import/export)**
+- Which framework does your project use? **React**
+- Does your project use TypeScript? **No**
+- Where does your code run? **Browser**
+- How would you like to define a style for your project? **Use a popular style guide**
+- Which style guide do you want to follow? **Airbnb: https://github.com/airbnb/javascript**
+- What format do you want your config file to be in? **JSON**
+
+Lancer `eslint "src/**/*.js"` pour vérifier le code existant
+
+`eslint "src/**/*.js" --fix` permet de corriger certaines problèmes automatiquement
+
 ### Fin
 
 Les critères d'évaluation sont les suivants:
