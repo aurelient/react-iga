@@ -59,8 +59,8 @@ Créez la structure des composants correspondant à cette application, en suivan
 
 Voici une structure pour démarrer, pensez à utiliser les composants bootstrap plutôt que du html pur:
 
-```JSX
 
+```jsx
 class Slide extends React.Component {
   render() {
     const slide = this.props.slide;
@@ -72,7 +72,9 @@ class Slide extends React.Component {
     );
   }
 }
+```
 
+```js
 class Slides extends React.Component {
   render() {
 
@@ -87,7 +89,9 @@ class Slides extends React.Component {
     );
   }
 }
+```
 
+```js
 class Toolbar extends React.Component {
   render() {
     return (
@@ -97,7 +101,9 @@ class Toolbar extends React.Component {
     );
   }
 }
+```
 
+```js
 class SlideShow extends React.Component {
   render() {
     return (
@@ -108,8 +114,9 @@ class SlideShow extends React.Component {
     );
   }
 }
+```
 
-
+```js
 const SLIDES = [
   {type: 'title', title: 'TIW 8', visible: true, notes: ""},
   {type: 'content', title: 'TP 1', text: "Le TP porte sur des rappels de developpement Web", visible: false, notes: "ce transparent est caché"},
@@ -148,4 +155,3 @@ En l'occurrence `HashRouter` (et non `BrowserRouter` qui demande une configurati
 - Si vous utilisez des `functional components`, avec le hook `useParams();` vous pouvez récupérer la valeur de la route. [Suivez cet exemple](https://reacttraining.com/react-router/web/example/url-params).
 
 Une fois la valeur de la route récupérée, modifier l'état de l'application, pour qu'il corresponde au transparent à afficher.
-

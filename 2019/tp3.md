@@ -161,3 +161,19 @@ export default withRouter(connect(null, mapDispatchToProps)(VOTRE_COMPOSANT));
 #### Lien Redux / React Router  
 
 Normalement l'intégration avec React Router se passe bien (pas de changements nécessaire). Si jamais ce n'était pas le cas, suivez l'utilisation de Redux avec React Router telle que présentée dans la documentation de [React Router](https://reacttraining.com/react-router/web/guides/redux-integration) ou celle de [Redux](https://redux.js.org/advanced/usage-with-react-router) pour configurer votre projet.  
+
+
+
+### Evaluation
+
+- Fichier README.md décrivant le process de build en dev, en prod, et de déploiement.
+- Fichier package.json nettoyé ne contenant que les dépendances nécessaires.
+- Déploiement sur Heroku
+- Composants React pour le Slideshow, les Slides, la Toolbar.
+- Store / reducer qui gère l’état de l’application
+- Le flux de données suit le flow React, des actions sont déclarées, et les changements d’états passent par des actions unitaires qui modifient le store.
+- Les changement sont des fonctions qui renvoient un nouvel état (immutabilité) dans le reducer.
+- Redux pour la gestion avancée des états
+- Gestions des routes pour les transparents
+- Suivant/precedent change l’URI. Changer la route dans la barre d’URL du navigateur change l’etat de l’application.
+- Qualité globale du rendu (= application qui ressemble à quelque chose, un minimum de mise en page, orthographe propre, composants s’appuyant sur des librairies CSS ou stylés à la main).
