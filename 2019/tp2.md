@@ -120,7 +120,7 @@ const SLIDES = [
 ];
 
 ReactDOM.render(
-  <FilterableProductTable slides={SLIDES} />,
+  <SlideShow slides={SLIDES} />,
   document.getElementById('container')
 );
 ```

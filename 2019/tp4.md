@@ -1,6 +1,8 @@
 ## TP4 Distribution d’interface multi-dispositif
 
 Nous allons maintenant travailler à la distribution de l'application sur plusieurs dispositifs et à leur synchronisation.
+L'objectif est que vous puissiez changer l'état de votre application de présentation sur un dispositif (ex: mobile), et que l'état de l'application soit mis à jour partout (ex: vidéo-projection, personne qui regarde votre présentation à distance sur sa machine...)
+
 
 ### Définition de nouvelles routes et des vues associées
 

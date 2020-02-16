@@ -1,8 +1,7 @@
-## TP3 Redux, Middleware, websockets pour le multi-dispositif
+## TP3 Redux
 
-Nous allons maintenant gérer l'état de l'application sur plusieurs dispositifs en utilisant Redux et des Websockets. L'objectif est que vous puissiez changer l'état de votre application de présentation sur un dispositif (ex: mobile), et que l'état de l'application soit mis à jour partout (ex: vidéo-projection, personne qui regarde votre présentation à distance sur sa machine...)
-
-Nous allons gérer l'état qui comprend la liste des transparents et le transparent en cours.
+Nous allons maintenant gérer l'état de l'application en utilisant Redux.
+L'état comprend la liste des transparents et le transparent en cours.
 
 **Pensez à relire le cours et les ressources associées pour être au clair sur ce que vous êtes en train de faire.**
 
