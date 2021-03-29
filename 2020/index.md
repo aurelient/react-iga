@@ -2,13 +2,19 @@
 
 Aurélien Tabard
 
+Cours sur Webex :
+
+[https://univ-lyon1.webex.com/meet/aurelien.tabard](https://univ-lyon1.webex.com/meet/aurelien.tabard)
+
+
+
 ### Plan du cours
 
 |          | Cours                      | Supports     |
 | -------- | -------------------------- | ------------ |
-| CM 1     | Présentation de l'UE       |  [pdf](cours/cm0-intro.pdf)       |
-| CM 1     | Informatique Ubiquitaire   | [pdf](cours/cm1-introUbicomp.pdf)   |
-| CM 1     | Stack                      | [pdf](cours/cm1-stack.pdf)   |
+| CM 1.1 | Présentation de l'UE       |  [pdf](cours/cm0-intro.pdf)       |
+| CM 1.2   | Informatique Ubiquitaire   | [pdf](cours/cm1-introUbicomp.pdf)   |
+| CM 1.3   | Stack Javascript           | [pdf](cours/cm1-stack.pdf)   |
 | CM 2     | Programmation Réactive     | [pdf](cours/cm2-reactivity.pdf)        |
 | CM 3     | Design adaptatif & Gestes  | [pdf](cours/cm3-designAdaptatifetGestes.pdf) |
 | CM 4     | Collaboration  | [pdf](cours/cm4-collaboration.pdf) |
@@ -18,14 +24,14 @@ Aurélien Tabard
 
 ### TP
 
-| Sujet              | Jour  | Thème  |
-| -------------------|-------| ------ |
-| [TP 1.1](tp1) | 31/03 | Mise en place d'une Stack Node+React     |
-| [TP 2](tp2.html) | 01/04 | Introduction à React                     |
-| [TP 2](tp2.html) | 02/04 | Redux + websockets / multi-dispositif    |
-| [TP 2](tp2.html) | 02/04 | Distribution d'interface multi-dispositif|
-| [TP 3](tp3.html) | 03/04 | WebRTC: chat p2p local       |
-| [TP 3](tp3.html) | 04/04 | WebRTC suite, audio et video       |
+| Sujet       | Jour  | Thème  |
+| ------------|-------| ------ |
+| [TP 1](TP1) | 31/03 | Mise en place d'une Stack Node+React     |
+| [TP 2](TP2) | 01/04 | Introduction à React                     |
+| [TP 2](TP2) | 02/04 | Redux + websockets / multi-dispositif    |
+| [TP 2](TP2) | 02/04 | Distribution d'interface multi-dispositif|
+| [TP 3](TP3) | 03/04 | WebRTC: chat p2p local       |
+| [TP 3](TP3) | 04/04 | WebRTC suite, audio et video       |
 
 
 
