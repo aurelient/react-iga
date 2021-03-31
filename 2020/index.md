@@ -6,7 +6,13 @@ Cours sur Webex :
 
 [https://univ-lyon1.webex.com/meet/aurelien.tabard](https://univ-lyon1.webex.com/meet/aurelien.tabard)
 
+Vidéos de cours
+ - [Introduction à la programmation réactive](https://youtu.be/BT5AUUr6utw) 11min, à regarder jeudi avant le TP
+ - [Principes de programmation réactive](https://youtu.be/TWlcvevb-S8) 12min à regarder jeudi avant le TP
+ - [Introduction à React](https://youtu.be/-Ex0th5mVuU) 30min à regarder jeudi avant le TP
+ - [Redux](https://youtu.be/oPm_r4LG5cA) 15min à regarder vendredi avant le TP
 
+Formulaire de rendu des TPs : [https://forms.gle/BytuT6KjKVVKhejR9](https://forms.gle/BytuT6KjKVVKhejR9)
 
 ### Plan du cours
 
