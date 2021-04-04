@@ -6,12 +6,11 @@
 
 #### Présentation du TP
 
-L'objectif du TP est de mettre en place une Single Page Application (SPA) permettant à deux navigateurs de commencer une conversation via chat vidéo.
+L'objectif du TP est de mettre en place une Single Page Application (SPA) permettant à deux navigateurs de commencer une conversation de chat en p2p.
 
-Ce TP s'étalera sur 2 séances et fera l'objet d'un rendu en binome et d'une note.
+<!-- Ce TP s'étalera sur 2 séances et fera l'objet d'un rendu en binome et d'une note. -->
 
-Vous ferez le rendu sur la forge.
-
+<!-- Vous ferez le rendu sur la forge. -->
 
 
 ## TP3.1 WebRTC et chat en local
@@ -159,7 +158,7 @@ Le déroulé est le suivant :
 - Lors du clic sur HangUp, femer la connexion
 
 
-## TP3.2 WebRTC et vidéo
+<!-- ## TP3.2 WebRTC et vidéo
 
 Nous allons maintenant créer un nouveau composant dédié à la vidéo.
 
@@ -300,7 +299,7 @@ const gotRemoteStream = (remoteStream) => {
 
 ### Raccrocher
 Il suffit d'appeler les méthodes `disconnect` sur chacune des connexion (avec les listeners appropriés), potentiellement `destroy` pour forcer la fin de la connexion.
-
+ -->
 
 ## Déployer sur Heroku
 
@@ -320,10 +319,10 @@ Date à discuter en classe
 
   - Déployez votre code sur Heroku
   - Pousser votre code sur la forge
-  - Déposer les liens sur Tomuss
+  - Déposer les liens sur le formulaire google form
 
-  - Le lien vers Heroku pointe vers une page permettant d'aller sur le composant de chaque TP (ou sur une version intégrant les deux).
-  - Le lien vers la forge permet de faire un clone (format suivant: https://forge.univ-lyon1.fr/xxx/yyy.git)
+  <!-- - Le lien vers Heroku pointe vers une page permettant d'aller sur le composant de chaque TP (ou sur une version intégrant les deux). -->
+  - Le lien vers votre dépot git de faire un clone (format suivant: https://forge.univ-lyon1.fr/xxx/yyy.git)
 
 
 ## Evaluation
@@ -331,16 +330,16 @@ Date à discuter en classe
 - rendu respectant les consignes (2pt)
 - build correspondant aux instructions du TP1 (2pt)
 - README clair sur les spécificité du projet (build, déploiement, ce qui marche et ce qui ne marche pas, sur comment tester...) (1pt)
-- Des composants material (ou autre) sont utilisés de manière judicieuse (aka l'application ressemble à quelque chose) (2pt)
+- Des composants material (ou autre) sont utilisés de manière judicieuse (2pt)
 - DataChat (6pt)
   - signalement au serveur
   - établissement de la connexion entre les deux pairs
   - les deux pairs peuvent s'envoyer des messages
-- VidéoChat (5pt)
+<!-- - VidéoChat (5pt)
   - le flux local s'affiche
   - le flux distant est bien récupéré
   - le flux distant s'affiche
   - le tout fonctionne en local
-  - la fermeture de l'appel se passe correctement
+  - la fermeture de l'appel se passe correctement -->
 - Les states et props de React sont bien utilisées (1pt).
-- Déploiement sur Heroku qui fonctionne (3pt) (1 si c'est déployé, et 2 bonus si la démarche est documentée et me permet de comprendre ou ça coince). 
+- Déploiement sur Heroku (1pt)
